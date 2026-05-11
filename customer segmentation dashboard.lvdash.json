@@ -1,0 +1,698 @@
+{
+  "datasets": [
+    {
+      "name": "99278224",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  COUNT(*) AS customers\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY customers DESC;"
+      ]
+    },
+    {
+      "name": "c37efcf2",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  COUNT(*) AS customers\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY customers DESC;"
+      ]
+    },
+    {
+      "name": "5ec987c9",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) AS total_customers\n",
+        "FROM gold_customer_segments;\n"
+      ]
+    },
+    {
+      "name": "cf6bf1fb",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM gold_customer_segments;"
+      ]
+    },
+    {
+      "name": "37902e9f",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  ROUND(SUM(Churned) / COUNT(*), 2) AS overall_churn_rate\n",
+        "FROM gold_customer_segments;"
+      ]
+    },
+    {
+      "name": "2d1eb9e1",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  COUNT(*) AS customers\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY customers DESC;"
+      ]
+    },
+    {
+      "name": "daf012ac",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC;"
+      ]
+    },
+    {
+      "name": "0cc4b43c",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(SUM(Churned) * 100.0 / COUNT(*), 2) AS churn_rate\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY churn_rate DESC;"
+      ]
+    },
+    {
+      "name": "7af8c8d5",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Total_Purchases), 2) AS avg_purchases,\n",
+        "  ROUND(AVG(Average_Order_Value), 2) AS avg_order_value\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_purchases DESC;"
+      ]
+    },
+    {
+      "name": "d7fb068f",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM gold_customer_segments\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC\n",
+        "LIMIT 1;"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "7ed78275",
+      "displayName": "dashboards",
+      "layout": [
+        {
+          "widget": {
+            "name": "993dbca5",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "99278224",
+                  "fields": [
+                    {
+                      "name": "sum(customers)",
+                      "expression": "SUM(`customers`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "mark": {
+                "layout": "stack"
+              },
+              "frame": {
+                "title": "customers per cluster 1",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "sum(customers)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "customers"
+                },
+                "color": {
+                  "fieldName": "Cluster_Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "6e21c169",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "99278224",
+                  "fields": [
+                    {
+                      "name": "sum(customers)",
+                      "expression": "SUM(`customers`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "customers per cluster 2",
+                "showTitle": true
+              },
+              "mark": {
+                "layout": "group"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(customers)",
+                  "displayName": "customers",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Cluster_Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "bd089bc5",
+            "queries": [
+              {
+                "name": "fca91eefafff444a88cee236971ce2b3",
+                "query": {
+                  "datasetName": "5ec987c9",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "total customers",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"\",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"total_customers\",\"stringDecimal\":0,\"targetRowNumber\":1}",
+                "query_name": "fca91eefafff444a88cee236971ce2b3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "8e5977a3",
+            "queries": [
+              {
+                "name": "9d4c10b7276c410eb89baaa0a018d05b",
+                "query": {
+                  "datasetName": "cf6bf1fb",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "average lifetiem value",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"\",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"avg_ltv\",\"stringDecimal\":0,\"targetRowNumber\":1}",
+                "query_name": "9d4c10b7276c410eb89baaa0a018d05b"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "b3e755d0",
+            "queries": [
+              {
+                "name": "6d47d399644348c68bbbe4c79847652e",
+                "query": {
+                  "datasetName": "2d1eb9e1",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_bb3ceacc156",
+                      "expression": "SUM(`customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc155\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_bb3ceacc156\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc156\":{\"name\":\"customers\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "6d47d399644348c68bbbe4c79847652e"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "c729082f",
+            "queries": [
+              {
+                "name": "6d47d399644348c68bbbe4c79847652e",
+                "query": {
+                  "datasetName": "2d1eb9e1",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_bb3ceacc168",
+                      "expression": "SUM(`customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc167\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_bb3ceacc168\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc168\":{\"name\":\"customers\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "6d47d399644348c68bbbe4c79847652e"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "2d947e95",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "daf012ac",
+                  "fields": [
+                    {
+                      "name": "sum(avg_ltv)",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "average lifetime value per cluster 1",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  "#AB4057"
+                ],
+                "layout": "group"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(avg_ltv)",
+                  "displayName": "avg_ltv",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Cluster_Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "07018028",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "daf012ac",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "sum(avg_ltv)",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "average lifetime value per cluster 2",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  "#00A972"
+                ],
+                "layout": "layer"
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "Cluster_Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(avg_ltv)",
+                  "axis": {
+                    "title": "average lifetime value"
+                  },
+                  "displayName": "avg_ltv",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 18,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "fd5335cc",
+            "queries": [
+              {
+                "name": "63c8a8831f9f4824889ce22219baa2f3",
+                "query": {
+                  "datasetName": "0cc4b43c",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_bb3ceacc173",
+                      "expression": "SUM(`churn_rate`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "average churn per cluster1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc172\"},\"y\":[{\"column\":\"churn_rate\",\"id\":\"column_bb3ceacc173\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc173\":{\"name\":\"churn_rate\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "63c8a8831f9f4824889ce22219baa2f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 25,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "fa23143f",
+            "queries": [
+              {
+                "name": "63c8a8831f9f4824889ce22219baa2f3",
+                "query": {
+                  "datasetName": "0cc4b43c",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_bb3ceacc259",
+                      "expression": "SUM(`churn_rate`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "average churn per cluster2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"title\":{\"text\":\"churn rate\"},\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc258\"},\"y\":[{\"column\":\"churn_rate\",\"id\":\"column_bb3ceacc259\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc259\":{\"name\":\"churn_rate\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"title\":{\"text\":\"cluster name\"},\"type\":\"-\"}}",
+                "query_name": "63c8a8831f9f4824889ce22219baa2f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 25,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "f3d811b7",
+            "queries": [
+              {
+                "name": "ae0f71e41f2d44d48ed1b0dd44a38984",
+                "query": {
+                  "datasetName": "7af8c8d5",
+                  "fields": [
+                    {
+                      "name": "avg_purchases",
+                      "expression": "`avg_purchases`"
+                    },
+                    {
+                      "name": "avg_order_value",
+                      "expression": "`avg_order_value`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "average purchases per cluster3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc187\"},\"x\":{\"column\":\"avg_purchases\",\"id\":\"column_bb3ceacc185\"},\"y\":[{\"column\":\"avg_order_value\",\"id\":\"column_bb3ceacc186\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"scatter\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc186\":{\"name\":\"avg_order_value\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "ae0f71e41f2d44d48ed1b0dd44a38984"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 31,
+            "width": 11,
+            "height": 9
+          }
+        },
+        {
+          "widget": {
+            "name": "260b36f5",
+            "queries": [
+              {
+                "name": "ae0f71e41f2d44d48ed1b0dd44a38984",
+                "query": {
+                  "datasetName": "7af8c8d5",
+                  "fields": [
+                    {
+                      "name": "avg_purchases",
+                      "expression": "`avg_purchases`"
+                    },
+                    {
+                      "name": "column_bb3ceacc190",
+                      "expression": "SUM(`avg_order_value`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "average purchases per cluster",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_bb3ceacc191\"},\"x\":{\"column\":\"avg_purchases\",\"id\":\"column_bb3ceacc189\"},\"y\":[{\"column\":\"avg_order_value\",\"id\":\"column_bb3ceacc190\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_bb3ceacc190\":{\"name\":\"avg_order_value\",\"type\":\"column\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "ae0f71e41f2d44d48ed1b0dd44a38984"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 9
+          }
+        },
+        {
+          "widget": {
+            "name": "6d5be0fc",
+            "queries": [
+              {
+                "name": "7264c41ae99c4aa08f09f92e3e805ad2",
+                "query": {
+                  "datasetName": "d7fb068f",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "top value customer lifetime value",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"\",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"avg_ltv\",\"stringDecimal\":0,\"targetRowNumber\":1}",
+                "query_name": "7264c41ae99c4aa08f09f92e3e805ad2"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
