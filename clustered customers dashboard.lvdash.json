@@ -1,0 +1,1661 @@
+{
+  "datasets": [
+    {
+      "name": "324d1cf5",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) AS total_customers\n",
+        "FROM clustered_customers_kmeans;\n"
+      ]
+    },
+    {
+      "name": "f1ed5d0e",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) AS total_customers\n",
+        "FROM clustered_customers_kmeans;\n"
+      ]
+    },
+    {
+      "name": "77f031d0",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans;"
+      ]
+    },
+    {
+      "name": "a6705353",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  COUNT(*) AS customers\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY customers DESC;"
+      ]
+    },
+    {
+      "name": "6a16e5c7",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC;"
+      ]
+    },
+    {
+      "name": "b932b044",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC;"
+      ]
+    },
+    {
+      "name": "ff4cd233",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC;"
+      ]
+    },
+    {
+      "name": "77d615b3",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC;"
+      ]
+    },
+    {
+      "name": "67d16db6",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Average_Order_Value), 2) AS avg_order_value\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name;"
+      ]
+    },
+    {
+      "name": "acca9767",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Average_Order_Value), 2) AS avg_order_value\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name;"
+      ]
+    },
+    {
+      "name": "668a3cdb",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Lifetime_Value), 2) AS avg_ltv\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_ltv DESC\n",
+        "LIMIT 1;"
+      ]
+    },
+    {
+      "name": "6c0136ae",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  Cluster_Name,\n",
+        "  ROUND(AVG(Login_Frequency), 2) AS avg_login_frequency\n",
+        "FROM clustered_customers_kmeans\n",
+        "GROUP BY Cluster_Name\n",
+        "ORDER BY avg_login_frequency DESC;"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "227b1f41",
+      "displayName": "dashboard",
+      "layout": [
+        {
+          "widget": {
+            "name": "18698aec",
+            "queries": [
+              {
+                "name": "f193da005b7b4976874513f6514058d7",
+                "query": {
+                  "datasetName": "324d1cf5",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "total customers counter",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"total number of customers\",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"total_customers\",\"stringDecimal\":0,\"targetRowNumber\":1,\"countRow\":false}",
+                "query_name": "f193da005b7b4976874513f6514058d7"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "5a86fbbb",
+            "queries": [
+              {
+                "name": "f193da005b7b4976874513f6514058d7",
+                "query": {
+                  "datasetName": "f1ed5d0e",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "counter of avg ltv",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"average lifetime value \",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"avg_ltv\",\"stringDecimal\":0,\"targetRowNumber\":1}",
+                "query_name": "f193da005b7b4976874513f6514058d7"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "52eb3182",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "77f031d0",
+                  "fields": [
+                    {
+                      "name": "overall_churn_rate",
+                      "expression": "`overall_churn_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "churn rate counter",
+                "showTitle": true,
+                "description": "overall churn rate",
+                "showDescription": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "overall_churn_rate",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "none",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 0.99
+                    }
+                  },
+                  "rowNumber": 1
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "3db22cfc",
+            "queries": [
+              {
+                "name": "63461d52f10945e9bc7c080531279eb8",
+                "query": {
+                  "datasetName": "a6705353",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c343",
+                      "expression": "SUM(`customers`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c346\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c347\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_5a1b084c343\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c343\":{\"name\":\"customers\",\"type\":\"column\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "63461d52f10945e9bc7c080531279eb8"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "6c068e65",
+            "queries": [
+              {
+                "name": "63461d52f10945e9bc7c080531279eb8",
+                "query": {
+                  "datasetName": "a6705353",
+                  "fields": [
+                    {
+                      "name": "customers",
+                      "expression": "`customers`"
+                    },
+                    {
+                      "name": "column_5a1b084c355",
+                      "expression": "SUM(`customers`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c357\"},\"x\":{\"column\":\"customers\",\"id\":\"column_5a1b084c360\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_5a1b084c355\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"numBins\":10,\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"Cluster_Name\":{\"type\":\"area\",\"yAxis\":0},\"column_5a1b084c351\":{\"name\":\"customers\",\"type\":\"area\",\"yAxis\":0},\"column_5a1b084c355\":{\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "63461d52f10945e9bc7c080531279eb8"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 18,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "dd85df7a",
+            "queries": [
+              {
+                "name": "63461d52f10945e9bc7c080531279eb8",
+                "query": {
+                  "datasetName": "a6705353",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c364",
+                      "expression": "SUM(`customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c363\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_5a1b084c364\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c364\":{\"name\":\"customers\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "63461d52f10945e9bc7c080531279eb8"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "ad3fdf7e",
+            "queries": [
+              {
+                "name": "63461d52f10945e9bc7c080531279eb8",
+                "query": {
+                  "datasetName": "a6705353",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "customers",
+                      "expression": "`customers`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "customers per cluster 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c379\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c380\"},\"y\":[{\"column\":\"customers\",\"id\":\"column_5a1b084c383\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"scatter\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"Cluster_Name\":{\"type\":\"scatter\",\"yAxis\":0},\"column_5a1b084c372\":{\"name\":\"customers\",\"type\":\"scatter\",\"yAxis\":0},\"customers\":{\"name\":\"customers\",\"type\":\"scatter\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "63461d52f10945e9bc7c080531279eb8"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 24,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "a559b729",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "6a16e5c7",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c394",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c396\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c393\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c394\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c394\":{\"name\":\"avg_ltv\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 31,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "fad1fe18",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "6a16e5c7",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c400",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c402\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c399\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c400\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c400\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 31,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "301d7871",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "6a16e5c7",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c406",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c405\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c406\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c406\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 37,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "aa97bec4",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "6a16e5c7",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c411",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c410\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c411\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c411\":{\"name\":\"avg_ltv\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 37,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "f74efaf2",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "6a16e5c7",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 5",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c418\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c415\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c416\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_ltv\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c416\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 43,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "3b2036a1",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "b932b044",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c394",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c396\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c393\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c394\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c394\":{\"name\":\"avg_ltv\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 49,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "1fdafdb4",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "b932b044",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c400",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c402\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c399\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c400\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c400\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 49,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "2a6bcca3",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "b932b044",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c406",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c405\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c406\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c406\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 55,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "e919f2ed",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "b932b044",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c411",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c410\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c411\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c411\":{\"name\":\"avg_ltv\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 55,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "80e18bb7",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "b932b044",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 5",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c418\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c415\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c416\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_ltv\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c416\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 61,
+            "width": 10,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "68b30780",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "ff4cd233",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c394",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c396\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c393\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c394\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c394\":{\"name\":\"avg_ltv\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 67,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "f5057613",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "ff4cd233",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c400",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c402\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c399\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c400\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c400\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 67,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "defdda52",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "ff4cd233",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c406",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c405\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c406\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c406\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 73,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ada1a7eb",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "ff4cd233",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c411",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c410\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c411\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c411\":{\"name\":\"avg_ltv\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 73,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "02580fae",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "ff4cd233",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 5",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c418\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c415\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c416\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_ltv\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c416\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 79,
+            "width": 10,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "d3bc0a31",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "77d615b3",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c394",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c396\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c393\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c394\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c394\":{\"name\":\"avg_ltv\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 85,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "709c32e6",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "77d615b3",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c400",
+                      "expression": "SUM(`avg_ltv`)"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c402\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c399\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c400\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c400\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 85,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "100c6006",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "77d615b3",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c406",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c405\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c406\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"area\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c406\":{\"name\":\"avg_ltv\",\"type\":\"area\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 91,
+            "width": 7,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "8b563974",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "77d615b3",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c411",
+                      "expression": "SUM(`avg_ltv`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c410\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c411\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c411\":{\"name\":\"avg_ltv\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 7,
+            "y": 91,
+            "width": 5,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "fe6e5daa",
+            "queries": [
+              {
+                "name": "9c48595ffde245468d3e3d77ecf543f3",
+                "query": {
+                  "datasetName": "77d615b3",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg lifetime value 5",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c418\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c415\"},\"y\":[{\"column\":\"avg_ltv\",\"id\":\"column_5a1b084c416\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_ltv\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c416\":{\"name\":\"avg_ltv\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "9c48595ffde245468d3e3d77ecf543f3"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 97,
+            "width": 9,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "68a448c8",
+            "queries": [
+              {
+                "name": "b0990658cd8144628210e379d9599bad",
+                "query": {
+                  "datasetName": "67d16db6",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c573",
+                      "expression": "AVG(`avg_order_value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg order value 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c572\"},\"y\":[{\"column\":\"avg_order_value\",\"id\":\"column_5a1b084c573\",\"transform\":\"AVG\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"line\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c573\":{\"name\":\"avg_order_value\",\"type\":\"line\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "b0990658cd8144628210e379d9599bad"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 103,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "9e119747",
+            "queries": [
+              {
+                "name": "b0990658cd8144628210e379d9599bad",
+                "query": {
+                  "datasetName": "67d16db6",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c559",
+                      "expression": "AVG(`avg_order_value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg order value 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c558\"},\"y\":[{\"column\":\"avg_order_value\",\"id\":\"column_5a1b084c559\",\"transform\":\"AVG\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c559\":{\"color\":\"#00A972\",\"name\":\"avg_order_value\",\"type\":\"column\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "b0990658cd8144628210e379d9599bad"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 103,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "4dea0467",
+            "queries": [
+              {
+                "name": "b0990658cd8144628210e379d9599bad",
+                "query": {
+                  "datasetName": "67d16db6",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_order_value",
+                      "expression": "`avg_order_value`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_order_value",
+                      "expression": "`avg_order_value`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg order value 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c568\"},\"size\":{\"column\":\"avg_order_value\",\"id\":\"column_5a1b084c569\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c565\"},\"y\":[{\"column\":\"avg_order_value\",\"id\":\"column_5a1b084c566\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_order_value\":{\"name\":\"avg_order_value\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c566\":{\"name\":\"avg_order_value\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "b0990658cd8144628210e379d9599bad"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 109,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "3e7ae390",
+            "queries": [
+              {
+                "name": "b0990658cd8144628210e379d9599bad",
+                "query": {
+                  "datasetName": "acca9767",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "top value cluster",
+                "viz_type": "COUNTER",
+                "serialized_options": "{\"stringThouSep\":\",\",\"counterLabel\":\"high value loyal customers\",\"rowNumber\":1,\"stringDecChar\":\".\",\"tooltipFormat\":\"0,0.000\",\"counterColName\":\"avg_ltv\",\"stringDecimal\":0,\"targetRowNumber\":1}",
+                "query_name": "b0990658cd8144628210e379d9599bad"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 115,
+            "width": 3,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "da8749ba",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "668a3cdb",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_ltv",
+                      "expression": "`avg_ltv`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "purchase behavior per cluster 1",
+                "showTitle": true,
+                "showDescription": true
+              },
+              "mark": {
+                "shape": "circle"
+              },
+              "widgetType": "scatter",
+              "encodings": {
+                "x": {
+                  "fieldName": "Cluster_Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_ltv",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 121,
+            "width": 10,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "801688dc",
+            "queries": [
+              {
+                "name": "f9412fcfc0e542db9ad332ef333c9e72",
+                "query": {
+                  "datasetName": "6c0136ae",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c452",
+                      "expression": "SUM(`avg_login_frequency`)"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg login frequency 1",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c454\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c451\"},\"y\":[{\"column\":\"avg_login_frequency\",\"id\":\"column_5a1b084c452\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":true,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"column\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c452\":{\"name\":\"avg_login_frequency\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "f9412fcfc0e542db9ad332ef333c9e72"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 127,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "1aab8b3f",
+            "queries": [
+              {
+                "name": "f9412fcfc0e542db9ad332ef333c9e72",
+                "query": {
+                  "datasetName": "6c0136ae",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c458",
+                      "expression": "SUM(`avg_login_frequency`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg login frequency 2",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c457\"},\"y\":[{\"column\":\"avg_login_frequency\",\"id\":\"column_5a1b084c458\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"line\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c458\":{\"color\":\"#AB4057\",\"name\":\"avg_login_frequency\",\"type\":\"line\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "f9412fcfc0e542db9ad332ef333c9e72"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 127,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "d43b3a63",
+            "queries": [
+              {
+                "name": "f9412fcfc0e542db9ad332ef333c9e72",
+                "query": {
+                  "datasetName": "6c0136ae",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "column_5a1b084c465",
+                      "expression": "SUM(`avg_login_frequency`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg login frequency 3",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c464\"},\"y\":[{\"column\":\"avg_login_frequency\",\"id\":\"column_5a1b084c465\",\"transform\":\"SUM\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"pie\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_5a1b084c465\":{\"name\":\"avg_login_frequency\",\"type\":\"pie\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":true,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "f9412fcfc0e542db9ad332ef333c9e72"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 133,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "7e588acd",
+            "queries": [
+              {
+                "name": "f9412fcfc0e542db9ad332ef333c9e72",
+                "query": {
+                  "datasetName": "6c0136ae",
+                  "fields": [
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    },
+                    {
+                      "name": "avg_login_frequency",
+                      "expression": "`avg_login_frequency`"
+                    },
+                    {
+                      "name": "Cluster_Name",
+                      "expression": "`Cluster_Name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg login frequency 4",
+                "viz_type": "CHART",
+                "serialized_options": "{\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"series\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c472\"},\"x\":{\"column\":\"Cluster_Name\",\"id\":\"column_5a1b084c469\"},\"y\":[{\"column\":\"avg_login_frequency\",\"id\":\"column_5a1b084c470\"}]},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"bubble\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"avg_login_frequency\":{\"name\":\"avg_login_frequency\",\"type\":\"bubble\",\"yAxis\":0},\"column_5a1b084c470\":{\"name\":\"avg_login_frequency\",\"type\":\"bubble\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "f9412fcfc0e542db9ad332ef333c9e72"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 133,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "731ba13e",
+            "queries": [
+              {
+                "name": "f9412fcfc0e542db9ad332ef333c9e72",
+                "query": {
+                  "datasetName": "6c0136ae",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "avg login frequency 5",
+                "viz_type": "FUNNEL",
+                "serialized_options": "{\"valueCol\":{\"colName\":\"avg_login_frequency\",\"displayAs\":\"Value\"},\"sortKeyCol\":{\"colName\":\"avg_login_frequency\",\"reverse\":true},\"percentFormat\":\"0[.]00%\",\"stepCol\":{\"colName\":\"Cluster_Name\",\"displayAs\":\"Steps\"},\"percentValuesRange\":{\"max\":1000,\"min\":0.01},\"itemsLimit\":100,\"numberFormat\":\"0,0.[00]\",\"autoSort\":true}",
+                "query_name": "f9412fcfc0e542db9ad332ef333c9e72"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 139,
+            "width": 9,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
